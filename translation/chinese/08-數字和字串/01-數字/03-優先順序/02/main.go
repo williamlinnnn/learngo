@@ -14,8 +14,8 @@ func main() {
 	n, m := 1, 5
 
 	fmt.Println(2 + 1*m/n)
-	fmt.Println(2 + ((1 * m) / n)) // same as above
+	fmt.Println(2 + ((1 * m) / n)) // 同上
 
-	// let's change the precedence using parentheses
+	// 用括號改變優先序
 	fmt.Println(((2 + 1) * m) / n)
 }

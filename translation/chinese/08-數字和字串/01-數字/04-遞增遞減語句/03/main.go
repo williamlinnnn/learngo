@@ -15,7 +15,7 @@ import "fmt"
 func main() {
 	var counter int
 
-	// following "statements" are correct:
+	// 以下這些「語句」是正確的：
 
 	counter++ // 1
 	counter++ // 2
@@ -24,7 +24,7 @@ func main() {
 	fmt.Printf("There are %d line(s) in the file\n",
 		counter)
 
-	// the following "expressions" are incorrect:
+	// 以下這些「運算式」是錯誤的：
 
 	// counter = 5+counter--
 	// counter = ++counter + counter--

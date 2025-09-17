@@ -13,11 +13,11 @@ import "fmt"
 func main() {
 	n := 10
 
-	// ALTERNATIVES:
+	// 可替代方案:
 	// n = n - 1
 	// n -= 1
 
-	// BETTER:
+	// 更好的方案:
 	n--
 
 	fmt.Println(n)

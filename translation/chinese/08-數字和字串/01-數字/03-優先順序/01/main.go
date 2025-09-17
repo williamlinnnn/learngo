@@ -13,16 +13,16 @@ import "fmt"
 func main() {
 	fmt.Println(
 		2+2*4/2,
-		2+((2*4)/2), // same as above
+		2+((2*4)/2), // 同上
 	)
 
 	fmt.Println(
 		1+4-2,
-		(1+4)-2, // same as above
+		(1+4)-2, // 同上
 	)
 
 	fmt.Println(
 		(2+2)*4/2,
-		(2+2)*(4/2), // same as above
+		(2+2)*(4/2), // 同上
 	)
 }

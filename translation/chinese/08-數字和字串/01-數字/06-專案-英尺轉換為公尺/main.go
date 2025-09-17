@@ -17,7 +17,7 @@ import (
 func main() {
 	arg := os.Args[1]
 
-	// feet is a float64 now
+	// feet 現在是 float64
 	feet, _ := strconv.ParseFloat(arg, 64)
 
 	meters := feet * 0.3048

@@ -9,8 +9,8 @@
 package main
 
 func main() {
-	// // Precedence: Order of expressions
-	// // Multiplication operators runs first: * and /
+	// 優先順序：運算式的執行順序
+	// 乘法與除法運算子會先執行：* 和 /
 
 	// fmt.Println(
 	// 	1 + 5 - 3*10/2,
@@ -22,8 +22,8 @@ func main() {
 	// // 6 - 15 = -9
 
 	// // **** TIP ****
-	// // Use parentheses to change the order of evaluation.
-	// // First, (1+5-3), then (10/2) will be calculated.
+	// // 用括號來改變優先序.
+	// // 先執行 (1+5-3), 然後換 (10/2) .
 
 	// fmt.Println(
 	// 	(1 + 5 - 3) * (10 / 2),
