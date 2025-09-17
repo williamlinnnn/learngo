@@ -11,18 +11,14 @@ package main
 import "fmt"
 
 func main() {
-	// When you use a float value with an integer
-	// in a calculation,
-	// the result always becomes a float.
+	// Go 編譯器將這些數字視為整數，
+	// 因為整數值中沒有小數部分，
+	// 所以結果會變成 1 而不是 1.5
 
-	ratio := 3.0 / 2
+	// 因此，這裡的 ratio 變數是一個 int 型別，
+	// 因為 3 除以 2 的結果是一個整數。
 
-	// OR:
-	// ratio = 3 / 2.0
+	ratio := 3 / 2
 
-	// OR - if 3 is inside an int variable:
-	// n := 3
-	// ratio = float64(n) / 2
-
-	fmt.Printf("%f", ratio)
+	fmt.Printf("%d", ratio)
 }

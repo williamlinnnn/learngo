@@ -20,12 +20,12 @@ func main() {
 	fmt.Println("quot:", 8/2)   // quotient - int
 	fmt.Println("quot:", 8/1.5) // quotient - float64
 
-	// remainder is only for integers
+	// 餘數運算只能用於整數
 	fmt.Println("rem :", 8%3)
-	// fmt.Println("rem:", 8.0%3) // error
+	// fmt.Println("rem:", 8.0%3) // 錯誤
 
-	// you can do this
-	// since the fractional part of a float is zero
+	// 這樣是可以的
+	// 因為浮點數的小數部分為零
 	f := 8.0
 	fmt.Println("rem :", int(f)%3)
 }

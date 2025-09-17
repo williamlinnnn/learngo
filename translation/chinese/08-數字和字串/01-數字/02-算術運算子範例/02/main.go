@@ -11,20 +11,20 @@ package main
 import "fmt"
 
 func main() {
-	// what's the value of the ratio?
+	// ratio 的值是多少？
 	// 3 / 2 = 1.5?
 	var ratio float64 = 3 / 2
 	fmt.Println(ratio)
 
-	// explain
-	// above expression equals to this:
+	// 解釋
+	// 上面的運算式等同於：
 	ratio = float64(int(3) / int(2))
 	fmt.Println(ratio)
 
-	// how to fix it?
+	// 如何解決?
 	//
-	// remember, when one of the values is a float value
-	// the result becomes a float
+	// 記住，只要其中一個值是浮點數
+	// 結果就會是浮點數
 	ratio = float64(3) / 2
 	fmt.Println(ratio)
 

@@ -11,16 +11,16 @@ package main
 import "fmt"
 
 func main() {
-	// Go compiler sees these numbers as integers,
-	//   since, there are no fractional parts in
-	//   integer values,
-	// So, the result becomes 1 instead of 1.5
+	ratio := 1.0 / 10.0
 
-	// So, ratio variable here is an int variable,
-	//   it's because, 3 divided by 2 results
-	//   in an integer.
+	// 經過 10 次運算之後
+	// 不精確的情況就很明顯了
+	//
+	// 先不用在意這個迴圈語法
+	// 之後會再解釋
+	for range [...]int{10: 0} {
+		ratio += 1.0 / 10.0
+	}
 
-	ratio := 3 / 2
-
-	fmt.Printf("%d", ratio)
+	fmt.Printf("%.60f", ratio)
 }

@@ -11,16 +11,17 @@ package main
 import "fmt"
 
 func main() {
-	ratio := 1.0 / 10.0
+	// 當你在計算中同時使用浮點數和整數時
+	// 結果一定會變成浮點數
 
-	// after 10 operations
-	// the inaccuracy is clear
-	//
-	// BTW, don't mind about this loop syntax for now
-	// I'm going to explain it afterwards
-	for range [...]int{10: 0} {
-		ratio += 1.0 / 10.0
-	}
+	ratio := 3.0 / 2
 
-	fmt.Printf("%.60f", ratio)
+	// OR:
+	// ratio = 3 / 2.0
+
+	// OR - if 3 is inside an int variable:
+	// n := 3
+	// ratio = float64(n) / 2
+
+	fmt.Printf("%f", ratio)
 }
