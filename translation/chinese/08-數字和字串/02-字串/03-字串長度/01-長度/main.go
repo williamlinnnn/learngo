@@ -11,13 +11,9 @@ package main
 import "fmt"
 
 func main() {
-	name, last := "carl", "sagan"
+	name := "carl"
 
-	// assignment operation using string concat
-	name += " edward"
-
-	// equals to this:
-	// name = name + " edward"
-
-	fmt.Println(name + " " + last)
+	// 字串是由位元組（bytes）組成的
+	// len 函數會計算字串值中的位元組數
+	fmt.Println(len(name))
 }

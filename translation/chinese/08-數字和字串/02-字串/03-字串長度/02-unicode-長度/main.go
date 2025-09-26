@@ -14,14 +14,14 @@ import (
 )
 
 func main() {
-	// strings are made up of bytes
+	// 字串是由位元組（bytes）組成的
 
-	// len function counts the bytes in a string value.
+	// len 函數會計算字串值中的位元組數
 	//
-	// This string literal contains unicode characters.
+	// 這個字串字面值包含 Unicode 字元
 	//
-	// And, unicode characters can be 1-4 bytes.
-	// So, "İnanç" is 7 bytes long, not 5.
+	// 而 Unicode 字元可能佔 1 到 4 個位元組
+	// 因此，"İnanç" 的長度是 7 個位元組，而不是 5
 	//
 	// İ = 2 bytes
 	// n = 1 byte
@@ -32,8 +32,8 @@ func main() {
 	name := "İnanç"
 	fmt.Printf("%q is %d bytes\n", name, len(name))
 
-	// To get the actual characters (or runes) inside
-	// a utf-8 encoded string value, you should do this:
+	// 若要取得 UTF-8 編碼字串中的實際字元（或 rune），
+	// 你應該這麼做：
 	fmt.Printf("%q is %d characters\n",
 		name, utf8.RuneCountInString(name))
 }

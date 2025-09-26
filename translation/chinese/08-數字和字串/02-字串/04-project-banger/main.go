@@ -14,7 +14,7 @@ import (
 	"strings"
 )
 
-// NOTE: You should always pass it at least one argument
+// 注意：你至少應該傳入一個參數
 
 func main() {
 	msg := os.Args[1]

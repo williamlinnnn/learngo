@@ -11,20 +11,20 @@ package main
 import "fmt"
 
 func main() {
-	// The type of a string and a raw string literal
-	// is the same. They both are strings.
+	// 字串與原始字串（raw string literal）的類型相同
+	// 它們都是 string
 	//
-	// So, they both can be used as a string value.
+	// 因此，它們都可以作為字串值使用
 	var s string
 	s = "how are you?"
 	s = `how are you?`
 	fmt.Println(s)
 
-	// string literal
+	// 字串
 	s = "<html>\n\t<body>\"Hello\"</body>\n</html>"
 	fmt.Println(s)
 
-	// raw string literal
+	// 原始字串
 	s = `
 <html>
 	<body>"Hello"</body>
@@ -32,7 +32,7 @@ func main() {
 
 	fmt.Println(s)
 
-	// windows path
-	fmt.Println("c:\\my\\dir\\file") // string literal
-	fmt.Println(`c:\my\dir\file`)    // raw string literal
+	// windows 路徑
+	fmt.Println("c:\\my\\dir\\file") // 字串
+	fmt.Println(`c:\my\dir\file`)    // 原始字串
 }

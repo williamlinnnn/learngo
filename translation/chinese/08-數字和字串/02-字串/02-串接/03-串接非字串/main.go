@@ -18,30 +18,30 @@ func main() {
 		"hello" + ", " + "how" + " " + "are" + " " + "today?",
 	)
 
-	// you can combine raw string and string literals
+	// 可以結合字串及原始字串
 	fmt.Println(
 		`hello` + `, ` + `how` + ` ` + `are` + ` ` + "today?",
 	)
 
 	// ------------------------------------------
-	// Converting non-string values into string
+	// 非字串轉為字串
 	// ------------------------------------------
 
 	eq := "1 + 2 = "
 	sum := 1 + 2
 
-	// invalid op
-	// string concat op can only be used with strings
+	// 無效的操作
+	// 字串連接運算子只能用於字串
 	// fmt.Println(eq + sum)
 
-	// you need to convert it using strconv.Itoa
-	// Itoa = Integer to ASCII
+	// 你需要使用 strconv.Itoa 進行轉換
+	// Itoa = 整數轉 ASCII
 
 	fmt.Println(eq + strconv.Itoa(sum))
 
 	//
 
-	// invalid op
+	// 錯誤操作
 	// eq = true + " " + false
 
 	eq = strconv.FormatBool(true) +

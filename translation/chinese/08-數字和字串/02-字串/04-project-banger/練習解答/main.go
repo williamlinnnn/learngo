@@ -13,20 +13,20 @@ import (
 	"strings"
 )
 
-// NOTE: You should always pass it at least one argument
+// 注意：你至少應該傳入一個參數
 
 func main() {
 	msg := os.Args[1]
 
-	// it's important to calculate things only once
-	// so, do not call the repeat function twice
-	// calling it once is enough
+	// 重要的是只計算一次
+	// 因此，不要呼叫 repeat 函數兩次
+	// 呼叫一次就足夠了
 	marks := strings.Repeat("!", len(msg))
 	s := marks + msg + marks
 	s = strings.ToUpper(s)
 
-	// you can also type this program more concisely
-	// like this:
+	// 你也可以把這個程式寫得更簡潔
+	// 例如：
 	//
 	// msg := strings.ToUpper(os.Args[1])
 	// marks := strings.Repeat("!", len(msg))

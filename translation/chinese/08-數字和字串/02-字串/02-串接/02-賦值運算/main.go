@@ -11,9 +11,13 @@ package main
 import "fmt"
 
 func main() {
-	name := "carl"
+	name, last := "carl", "sagan"
 
-	// strings are made up of bytes
-	// len function counts the bytes in a string value
-	fmt.Println(len(name))
+	// 使用串接
+	name += " edward"
+
+	// 等於這個:
+	// name = name + " edward"
+
+	fmt.Println(name + " " + last)
 }
