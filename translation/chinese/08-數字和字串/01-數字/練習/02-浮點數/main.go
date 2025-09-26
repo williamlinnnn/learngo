@@ -8,27 +8,18 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Incdecs
+// 練習:浮點數
 //
-//  1. Increase the `counter` 5 times
-//  2. Decrease the `factor` 2 times
-//  3. Print the product of counter and factor
+// 修正程式，讓它輸出 2.5 而不是 2
 //
-// RESTRICTION
-//  Use only the incdec statements
-//
-// EXPECTED OUTPUT
-//  -75
+// 預期輸出
+//  2.5
 // ---------------------------------------------------------
 
 func main() {
-	// DO NOT TOUCH THIS
-	counter, factor := 45, 0.5
-
-	// TYPE YOUR CODE BELOW
-	// ...
-
-	// LASTLY: REMOVE THE CODE BELOW
-	_, _ = counter, factor
+	x := 5 / 2
+	fmt.Println(x)
 }

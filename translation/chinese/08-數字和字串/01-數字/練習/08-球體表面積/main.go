@@ -13,22 +13,22 @@ import (
 )
 
 // ---------------------------------------------------------
-// EXERCISE: Sphere Area
+// 練習:球體表面積
 //
-//  1. Get the radius from the command-line
-//  2. Convert it to a float64
-//  3. Calculate the surface area of a sphere
+//  1. 從命令列取得半徑
+//  2. 將其轉換為 float64
+//  3. 計算球體的表面積
 //
-// SPHERE SURFACE AREA FORMULA
+// 球體表面積公式
 //  area = 4πr²
 //  https://en.wikipedia.org/wiki/Sphere#Surface_area
 //
-// RESTRICTION
-//  Use `math.Pow` to calculate the area
-//  Read its documentation to see how it works.
+// 限制條件
+//  使用 `math.Pow` 來計算面積
+//  可查看其文件了解使用方式
 //  https://golang.org/pkg/math/#Pow
 //
-// EXPECTED OUTPUT
+// 預期輸出
 //  go run main.go 10
 //    1256.64
 //
@@ -39,9 +39,9 @@ import (
 func main() {
 	var radius, area float64
 
-	// ADD YOUR CODE HERE
+	// 在此添加程式碼
 	// ...
 
-	// DO NOT TOUCH THIS
+	// 別動這裡
 	fmt.Printf("radius: %g -> area: %.2f\n", radius, area)
 }

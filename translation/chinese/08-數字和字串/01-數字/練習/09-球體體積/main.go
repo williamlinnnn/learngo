@@ -13,19 +13,19 @@ import (
 )
 
 // ---------------------------------------------------------
-// EXERCISE: Sphere Volume
+// 練習:球體體積
 //
-//  1. Get the radius from the command-line
-//  2. Convert it to a float64
-//  3. Calculate the volume of a sphere
+//  1. 從命令列取得半徑
+//  2. 將其轉換為 float64
+//  3. 計算球體的體積
 //
-// SPHERE VOLUME FORMULA
+// 球體體積公式
 //  https://en.wikipedia.org/wiki/Sphere#Enclosed_volume
 //
-// RESTRICTION
-//  Use `math.Pow` to calculate the volume
+// 限制條件
+//  使用 `math.Pow` 來計算體積
 //
-// EXPECTED OUTPUT
+// 預期輸出
 //  go run main.go 10
 //    4188.79
 //
@@ -36,9 +36,9 @@ import (
 func main() {
 	var radius, vol float64
 
-	// ADD YOUR CODE HERE
+	// 在此添加程式碼
 	// ...
 
-	// DO NOT TOUCH THIS
+	// 別動這裡
 	fmt.Printf("radius: %g -> volume: %.2f\n", radius, vol)
 }

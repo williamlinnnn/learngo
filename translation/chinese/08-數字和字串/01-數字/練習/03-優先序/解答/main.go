@@ -31,8 +31,8 @@ func main() {
 
 	// 100 / 5 / 2
 	// 5  / 2 = 2
-	//  5 and 2 are integers, so, the fractional part drops
-	// 5. / 2 = 2.5
-	//  because 5. is a float, so the result becomes a float
+	//  5 和 2 是整數，所以小數部分會被捨去
+	//  5. / 2 = 2.5
+	//  因為 5. 是浮點數，所以結果會是浮點數
 	fmt.Println(100 / (5. / 2))
 }

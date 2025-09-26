@@ -11,7 +11,7 @@ package main
 import "fmt"
 
 func main() {
-	// Below solutions are correct:
+	// 以下正確:
 	x := 5. / 2
 	// x := 5 / 2.
 	// x := float64(5) / 2

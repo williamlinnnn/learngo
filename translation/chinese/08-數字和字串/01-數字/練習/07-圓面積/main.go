@@ -13,26 +13,26 @@ import (
 )
 
 // ---------------------------------------------------------
-// EXERCISE: Circle Area
+// 練習:圓面積
 //
-//  Calculate the area of a circle from the given radius
+//  根據給定的半徑計算圓的面積
 //
-// CIRCLE AREA FORMULA
+// 圓面積公式
 //  area = πr²
 //  https://en.wikipedia.org/wiki/Area#Circles
 //
-// HINT
-//  For PI you can use `math.Pi`
+// 提示
+//  可以使用 `math.Pi` 作為 PI
 //
-// EXPECTED OUTPUT
-//  radius: 10 -> area: 314.1592653589793
+// 預期輸出
+//  半徑: 10 -> 面積: 314.1592653589793
 //
-// BONUS EXERCISE!
-//  1. Print the area as 314.16
-//  2. To do that you need to use the correct Printf verb :)
-//      Instead of `%g` verb below.
+// 額外練習！
+//  1. 將面積輸出為 314.16
+//  2. 要做到這一點，你需要使用正確的 Printf 格式化字元 :)
+//      而不是下面的 `%g`
 //
-//    EXPECTED OUTPUT
+//    預期輸出
 //     radius: 10 -> area: 314.16
 // ---------------------------------------------------------
 

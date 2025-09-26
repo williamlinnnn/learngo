@@ -8,24 +8,30 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Do Some Calculations
+// 練習:簡化敘述
 //
-//  1. Print the sum of 50 and 25
-//  2. Print the difference of 50 and 15.5
-//  3. Print the product of 50 and 0.5
-//  4. Print the quotient of 50 and 0.5
-//  5. Print the remainder of 25 and 3
-//  6. Print the negation of `5 + 2`
+//  簡化程式碼（重構）
 //
-// EXPECTED OUTPUT
-//  75
-//  34.5
-//  25
-//  100
-//  1
-//  -7
+// 限制條件：
+//  只能使用遞增遞減與指派運算
+//
+// 預期輸出
+//  3
 // ---------------------------------------------------------
 
 func main() {
+	width, height := 10, 2
+
+	width = width + 1
+	width = width + height
+	width = width - 1
+	width = width - height
+	width = width * 20
+	width = width / 25
+	width = width % 5
+
+	fmt.Println(width)
 }

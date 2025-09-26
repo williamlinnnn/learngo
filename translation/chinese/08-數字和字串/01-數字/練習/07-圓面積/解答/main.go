@@ -24,7 +24,7 @@ func main() {
 	fmt.Printf("radius: %g -> area: %.2f\n",
 		radius, area)
 
-	// ALTERNATIVE:
-	// math.Pow calculates the power of a float number
+	// 替代方法：
+	// math.Pow 用來計算浮點數的次方
 	// area = math.Pi * math.Pow(radius, 2)
 }

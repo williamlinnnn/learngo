@@ -11,15 +11,34 @@ package main
 import "fmt"
 
 // ---------------------------------------------------------
-// EXERCISE: Fix the Float
+// 練習：優先序
 //
-//  Fix the program to print 2.5 instead of 2
+//  修改運算式，讓它們產生預期的輸出
 //
-// EXPECTED OUTPUT
-//  2.5
+// 限制條件：
+//  使用括號來改變優先順序
 // ---------------------------------------------------------
 
 func main() {
-	x := 5 / 2
-	fmt.Println(x)
+	// 輸出 20
+	fmt.Println(10 + 5 - 5 - 10)
+
+	// 輸出 -16
+	fmt.Println(-10 + 0.5 - 1 + 5.5)
+
+	// 輸出 -25
+	fmt.Println(5 + 10*2 - 5)
+
+	// 輸出 0.5
+	fmt.Println(0.5*2 - 1)
+
+	// 輸出 24
+	fmt.Println(3 + 1/2*10 + 4)
+
+	// 輸出 15
+	fmt.Println(10 / 2 * 10 % 7)
+
+	// 輸出 40
+	// 注意要使用浮點數來解決
+	fmt.Println(100 / 5 / 2)
 }

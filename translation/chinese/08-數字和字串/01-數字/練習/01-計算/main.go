@@ -8,30 +8,24 @@
 
 package main
 
-import "fmt"
-
 // ---------------------------------------------------------
-// EXERCISE: Simplify the Assignments
+// 練習:計算
 //
-//  Simplify the code (refactor)
+//  1. 輸出 50 和 25 的和
+//  2. 輸出 50 和 15.5 的差
+//  3. 輸出 50 和 0.5 的積
+//  4. 輸出 50 和 0.5 的商
+//  5. 輸出 25 除以 3 的餘數
+//  6. 輸出 `5 + 2` 的相反數
 //
-// RESTRICTION
-//  Use only the incdec and assignment operations
-//
-// EXPECTED OUTPUT
-//  3
+// 預期輸出
+//  75
+//  34.5
+//  25
+//  100
+//  1
+//  -7
 // ---------------------------------------------------------
 
 func main() {
-	width, height := 10, 2
-
-	width = width + 1
-	width = width + height
-	width = width - 1
-	width = width - height
-	width = width * 20
-	width = width / 25
-	width = width % 5
-
-	fmt.Println(width)
 }
