@@ -11,10 +11,10 @@ package main
 import "fmt"
 
 func main() {
-	// this one uses a raw string literal
+	// 這個使用原始字串（raw string literal）
 
-	// can you see how readable it is?
-	// compared to the previous one?
+	// 你能看出它有多易讀嗎？
+	// 比起前一個程式？
 
 	path := `c:\program files\duper super\fun.txt
 c:\program files\really\funny.png`

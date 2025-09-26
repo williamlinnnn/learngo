@@ -10,28 +10,26 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"strings"
 )
 
 // ---------------------------------------------------------
-// EXERCISE: Right Trim It
+// 練習：改良版驚嘆程式（Improved Banger）
 //
-//  1. Look at the documentation of strings package
-//  2. Find a function that trims the spaces from
-//     only the right-most part of the given string
-//  3. Trim it from the right part only
-//  4. Print the number of characters it contains.
+//  修改 Banger 程式，使其可以處理 Unicode 字元
 //
-// RESTRICTION
-//  Your program should work with unicode string values.
+// 輸入
+//  "İNANÇ"
 //
-// EXPECTED OUTPUT
-//  5
+// 預期輸出
+//  İNANÇ!!!!!
 // ---------------------------------------------------------
 
 func main() {
-	// currently it prints 17
-	// it should print 5
+	msg := os.Args[1]
 
-	name := "inanç           "
-	fmt.Println(len(name))
+	s := msg + strings.Repeat("!", len(msg))
+
+	fmt.Println(s)
 }

@@ -11,26 +11,27 @@ package main
 import (
 	"fmt"
 	"os"
-	"strings"
 )
 
 // ---------------------------------------------------------
-// EXERCISE: Improved Banger
+// 練習：計算字元數
 //
-//  Change the Banger program the work with Unicode
-//  characters.
+//  1. 修改下列程式以支援 Unicode 字元
 //
-// INPUT
+// 輸入
 //  "İNANÇ"
 //
-// EXPECTED OUTPUT
-//  İNANÇ!!!!!
+// 預期輸出
+//  5
 // ---------------------------------------------------------
 
 func main() {
-	msg := os.Args[1]
+	// 目前它回傳 7
+	// 因為它計算的是位元組...
+	// 應該改為計算 rune（碼位）
+	//
+	// 當你用 "İNANÇ" 執行時，它應該回傳 5，而不是 7
 
-	s := msg + strings.Repeat("!", len(msg))
-
-	fmt.Println(s)
+	length := len(os.Args[1])
+	fmt.Println(length)
 }

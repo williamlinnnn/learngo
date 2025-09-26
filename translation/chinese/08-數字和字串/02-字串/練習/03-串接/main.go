@@ -11,33 +11,29 @@ package main
 import "fmt"
 
 // ---------------------------------------------------------
-// EXERCISE: Raw Concat
+// 練習：原始字串連接
 //
-//  1. Initialize the name variable
-//     by getting input from the command line
+//  1. 透過命令列輸入初始化 name 變數
 //
-//  2. Use concatenation operator to concatenate it
-//     with the raw string literal below
+//  2. 使用連接運算子將它與下面的原始字串連接
 //
-// NOTE
-//  You should concatenate the name variable in the correct
-//  place.
+// 注意
+//  你應該在正確的位置連接 name 變數
 //
-// EXPECTED OUTPUT
-//  Let's say that you run the program like this:
+// 預期輸出
+//  假設你這樣執行程式：
 //   go run main.go inanç
 //
-//  Then it should output this:
+//  那麼輸出應該如下：
 //   hi inanç!
 //   how are you?
 // ---------------------------------------------------------
 
 func main() {
-	// uncomment the code below
-	// name := "and get the name from the command-line"
+	// 取消註解下面的程式碼
+	// name := "從命令列取得名字"
 
-	// replace and concatenate the `name` variable
-	// after `hi ` below
+	// 將 `name` 變數替換並連接到下面的 `hi ` 之後
 
 	msg := `hi CONCATENATE-NAME-VARIABLE-HERE!
 how are you?`

@@ -11,24 +11,24 @@ package main
 import "fmt"
 
 // ---------------------------------------------------------
-// EXERCISE: Windows Path
+// 練習：Windows 路徑
 //
-//  1. Change the following program
-//  2. It should use a raw string literal instead
+//  1. 修改下列程式
+//  2. 改用原始字串（raw string literal）
 //
-// HINT
-//  Run this program first to see its output.
-//  Then you can easily understand what it does.
+// 提示
+//  先執行這個程式看看輸出
+//  這樣你就能輕鬆理解它的作用
 //
-// EXPECTED OUTPUT
-//  Your solution should output the same as this program.
-//  Only that it should use a raw string literal instead.
+// 預期輸出
+//  你的解答應該輸出與這個程式相同的結果
+//  不同的是應該使用原始字串
 // ---------------------------------------------------------
 
 func main() {
-	// HINTS:
-	// \\ equals to backslash character
-	// \n equals to newline character
+	// 提示：
+	// \\ 代表反斜線字元
+	// \n 代表換行字元
 
 	path := "c:\\program files\\duper super\\fun.txt\n" +
 		"c:\\program files\\really\\funny.png"

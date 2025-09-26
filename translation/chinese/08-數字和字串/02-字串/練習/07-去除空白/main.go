@@ -10,29 +10,29 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 // ---------------------------------------------------------
-// EXERCISE: Count the Chars
+// 練習：去除空白（Trim It）
 //
-//  1. Change the following program to work with unicode
-//     characters.
+//  1. 查看 strings 套件的文件
+//  2. 找一個可以去除給定字串前後空白的函數
+//  3. 去除 text 變數的空白並輸出
 //
-// INPUT
-//  "İNANÇ"
-//
-// EXPECTED OUTPUT
-//  5
+// 預期輸出
+//  The weather looks good.
+//  I should go and play.
 // ---------------------------------------------------------
 
 func main() {
-	// Currently it returns 7
-	// Because, it counts the bytes...
-	// It should count the runes (codepoints) instead.
-	//
-	// When you run it with "İNANÇ", it should return 5 not 7.
+	msg := `
+	
+	The weather looks good.
+I should go and play.
 
-	length := len(os.Args[1])
-	fmt.Println(length)
+
+
+	`
+
+	fmt.Println(msg)
 }
