@@ -1,4 +1,4 @@
-## What's the result of this expression?
+## 以下敘述的解答?
 ```go
 "\"Hello\\"" + ` \"World\"`
 ```
@@ -8,13 +8,13 @@
 3. "Hello" `"World"`
 4. "\"Hello\" `\"World\"`"
 
-> **1:** Go doesn't interpret the escape sequences in raw string literals.
+> **1:** Go 不會解讀原始字串（raw string literal）中的跳脫字元
 >
-> **2:** That's right. Go interprets `\"` as `"` but it doesn't do so for ` \"World\"`.
+> **2:** 沒錯，Go 會將 \" 解讀為 "，但對於 \"World\" 則不會這麼處理
 >
 
 
-## What's the best way to represent the following text in the code?
+## 在程式碼中表示以下文字的最佳方式是什麼？
 ```xml
 <xml>
   <items>
@@ -59,13 +59,13 @@
 </xml>`
 ```
 
-> **2-3:** You can't write a string literal like that. It can't be multiple-lines.
+> **2-3:** 你不能這樣寫字串字面值，它不能跨多行
 >
-> **4:** You don't need to use escape sequences inside raw string literals.
+> **4:** 在原始字串（raw string literal）中，不需要使用跳脫字元
 >
 
 
-## What's the result of the following expression?
+## 以下敘述的解答?
 ```go
 len("lovely")
 ```
@@ -75,11 +75,11 @@ len("lovely")
 3. 6 *CORRECT*
 4. 0
 
-> **2:** Remember! "a" is 1 char. `a` is also 1 char.
+> **2:** 記住! "a" 是 1 char. `a` 也是 1 char.
 >
 
 
-## What's the result of the following expression?
+## 以下敘述的解答?
 ```go
 len("very") + len(`\"cool\"`)
 ```
@@ -89,17 +89,17 @@ len("very") + len(`\"cool\"`)
 3. 16
 4. 10
 
-> **1:** There are also double-quotes, count them as well.
+> **1:** 還有雙引號，也要計算它們
 >
-> **2:** That's right. Go doesn't interpreted \" in raw string literals.
+> **2:** 沒錯，Go 不會解讀原始字串（raw string literal）中的 \"
 >
-> **3:** Remember! "very" is 4 characters. `very` is also 4 characters.
+> **3:** 記住！ "very" 是 4 個字元，`very` 也是 4 個字元
 >
-> **4:** Remember! Go doesn't interpreted \" in raw string literals.
+> **4:** 記住！Go 不會解讀原始字串（raw string literal）中的 \"
 >
 
 
-## What's the result of the following expression?
+## 以下敘述的解答?
 ```go
 len("very") + len("\"cool\"")
 ```
@@ -109,37 +109,37 @@ len("very") + len("\"cool\"")
 3. 16
 4. 10 *CORRECT*
 
-> **1:** There are also double-quotes, count them as well.
+> **1:** 還有雙引號，也要計算它們
 >
-> **2:** Remember! Go interprets escape sequences in string literals.
+> **2:** 記住！Go 會解讀字串字面值中的跳脫字元
 >
-> **4:** That's right. Go does interpret \" in a string literal. So, "\"" means ", which is 1 character.
+> **4:** 沒錯，Go 會解讀字串字面值中的 \"。因此，"\"" 表示 "，這是一個字元
 >
 
 
-## What's the result of the following expression?
+## 以下敘述的解答?
 ```go
 len("péripatéticien")
 ```
 
-**HINT:** é is 2 bytes long. And, the len function counts the bytes not the letters.
+**提示:** é 佔 2 個位元組，而 len 函數計算的是位元組數，而不是字母數
 
-**USELESS INFORMATION:** "péripatéticien" means "wanderer".
+**無用的資訊:** "péripatéticien" 意思是 "wanderer".
 
 1. 14
 2. 16 *CORRECT*
 3. 18
 4. 20
 
-> **1:** Remember! é is 2 bytes long.
+> **1:** 記住！é 佔 2 個位元組
 >
-> **2:** An english letter is 1 byte long. However, é is 2 bytes long. So, that makes up 16 bytes. Cool.
+> **2:** 英文字母佔 1 個位元組，但 é 佔 2 個位元組，所以總共是 16 個位元組。很酷吧。
 >
-> **3:** You didn't count the double-quotes, did you?
+> **3:** 你沒有算上雙引號，對吧？
 >
 
 
-## How can you find the correct length of the characters in this string literal?
+## 如何取得這個字串字面值中實際字元的正確長度？
 ```go
 "péripatéticien"
 ```
@@ -149,15 +149,15 @@ len("péripatéticien")
 3. `utf8.RuneCountInString("péripatéticien")` *CORRECT*
 4. `unicode/utf8.RuneCountInString("péripatéticien")`
 
-> **1:** Where are the double-quotes?
+> **1:** 雙引號在哪裡？
 >
-> **2:** This only finds the bytes in a string value.
+> **2:** 這只能找到字串值中的位元組數
 >
-> **4:** You're close. But, the package's name is utf8 not unicode/utf8.
+> **4:** 你很接近了，但套件名稱是 utf8，不是 unicode/utf8
 >
 
 
-## What's the result of the following expression?
+## 以下敘述的解答?
 ```go
 utf8.RuneCountInString("péripatéticien")
 ```
@@ -167,42 +167,42 @@ utf8.RuneCountInString("péripatéticien")
 3. 18
 4. 20
 
-> **1:** This is its byte count. `RuneCountInString` counts the runes (codepoints) not the bytes.
+> **1:** 這是它的位元組數。RuneCountInString 計算的是 rune（碼位），不是位元組
 >
-> **2:** That's right. `RuneCountInString` returns the number of runes (codepoints) in a string value.
+> **2:** 沒錯。RuneCountInString 回傳字串值中 rune（碼位）的數量
 >
 
 
-## Which package contains string manipulation functions?
+## 哪個套件包含字串操作的函數？
 1. string
 2. unicode/utf8
 3. strings *CORRECT*
 4. unicode/strings
 
 
-## What's the result of this expression?
+## 以下敘述的解答?
 ```go
 strings.Repeat("*x", 3) + "*"
 ```
 
-**HINT:** Repeat function repeats the given string.
+**提示:** Repeat 函數會重複給定的字串
 
 1. `*x*x*x`
 2. `x*x*x`
 3. `*x3`
 4. `*x*x*x*` *CORRECT*
 
-> **1:** You're close but you missed the concatenation at the end.
+> **1:** 你很接近了，但最後的字串連接漏掉了
 >
-> **2:** Look closely.
+> **2:** 仔細看看
 >
-> **3:** Wow! You should really watch the lectures again. Sorry.
+> **3:** 哇！你應該真的再看一次課程。抱歉
 >
-> **4:** That's right. Repeat function repeats the given string. And, the concatenation operator combines the strings.
+> **4:** 沒錯。Repeat 函數會重複給定的字串，而連接運算子則會將字串合併
 >
 
 
-## What's the result of this expression?
+## 以下敘述的解答?
 ```go
 strings.ToUpper("bye bye ") + "see you!"
 ```
@@ -212,11 +212,11 @@ strings.ToUpper("bye bye ") + "see you!"
 3. `bye bye + see you!`
 4. `BYE BYE see you!` *CORRECT*
 
-> **1:** You missed the ToUpper?
+> **1:** 你漏掉了 ToUpper?
 >
-> **2:** You're close but look closely. ToUpper only changes the first part of the string there.
+> **2:** 你很接近，但仔細看看。ToUpper 只改變了字串的前半部分
 >
-> **3:** Not even close. Sorry.
+> **3:** 完全不接近。抱歉
 >
-> **4:** Perfect! Good catch! ToUpper only changes the first part of the string there.
+> **4:** 完美！抓得很好！ToUpper 只改變了字串的前半部分
 >
